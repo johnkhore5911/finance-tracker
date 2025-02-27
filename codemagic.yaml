@@ -5,7 +5,7 @@ workflows:
     instance_type: mac_mini_m1
     environment:
       groups:
-        - expo-auth  # Add the group where you stored EXPO_TOKEN
+        - expo-auth  # This group contains EXPO_TOKEN
       vars:
         EAS_BUILD_PROFILE: development  # Change if needed
       node: 18
@@ -19,6 +19,6 @@ workflows:
       - name: Install Expo CLI & EAS CLI
         script: npm install -g expo-cli eas-cli
       - name: Authenticate with Expo
-        script: echo "EXPO_TOKEN=$EXPO_TOKEN" >> $HOME/.eas/eas.json  # Ensures authentication
+        script: export EXPO_TOKEN=$EXPO_TOKEN
       - name: Run EAS build for iOS
         script: eas build --platform ios --non-interactive --profile development
