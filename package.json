@@ -14,7 +14,12 @@
     "@react-navigation/bottom-tabs": "^7.2.0",
     "@react-navigation/native": "^7.0.14",
     "@react-navigation/stack": "^7.1.1",
+    "@shopify/flash-list": "1.7.3",
     "expo": "~52.0.35",
+    "expo-dev-client": "^5.0.12",
+    "expo-image": "~2.0.6",
+    "expo-image-picker": "~16.0.6",
+    "expo-router": "~4.0.17",
     "expo-status-bar": "~2.0.1",
     "firebase": "^11.3.1",
     "hermes-engine": "^0.11.0",
@@ -26,11 +31,7 @@
     "react-native-reanimated": "^3.16.7",
     "react-native-safe-area-context": "^5.2.0",
     "react-native-screens": "^4.7.0",
-    "react-native-vector-icons": "^10.2.0",
-    "expo-image": "~2.0.6",
-    "expo-image-picker": "~16.0.6",
-    "expo-router": "~4.0.17",
-    "@shopify/flash-list": "1.7.3"
+    "react-native-vector-icons": "^10.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
