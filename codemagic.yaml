@@ -1,0 +1,20 @@
+workflows:
+  react-native-ios:
+    name: React Native iOS Build
+    max_build_duration: 120
+    instance_type: mac_mini_m1
+    environment:
+      vars:
+        EAS_BUILD_PROFILE: development # Change if needed
+      node: 18
+      xcode: latest
+    triggering:
+      events:
+        - push
+    scripts:
+      - name: Install dependencies
+        script: npm install
+      - name: Install Expo CLI & EAS CLI
+        script: npm install -g expo-cli eas-cli
+      - name: Run EAS build for iOS
+        script: eas build --platform ios --non-interactive --profile development
